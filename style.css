@@ -105,7 +105,7 @@
   
   .nav {
     position: absolute;
-    bottom: 2rem;
+    bottom: 4rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
@@ -170,7 +170,7 @@
   /* Xiaomi Redmi Pad and Tablet Responsive Styles */
   @media (min-width: 768px) and (max-width: 1024px) {
     .nav {
-      bottom: 2.5rem;
+      bottom: 3.5rem;
       
       & .btn {
         padding: 1rem;
@@ -190,13 +190,33 @@
   /* Larger tablets and Redmi Pad specific */
   @media (min-width: 1024px) and (max-width: 1366px) {
     .nav {
-      bottom: 3rem;
+      bottom: 4.5rem;
       
       & .btn {
         padding: 1.2rem;
         font-size: 1.6rem;
         border-width: 3px;
         margin: 0 0.5rem;
+        transition: all 0.2s ease;
+        
+        &:hover {
+          background-color: rgba(255,255,255,0.4);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  /* High-resolution tablets and Redmi Pad */
+  @media (min-width: 1366px) and (max-width: 1920px) {
+    .nav {
+      bottom: 5rem;
+      
+      & .btn {
+        padding: 1.3rem;
+        font-size: 1.8rem;
+        border-width: 3px;
+        margin: 0 0.6rem;
         transition: all 0.2s ease;
         
         &:hover {
@@ -278,3 +298,105 @@
     }
   }
   /*  */
+
+  /* Small phones (320px - 480px) */
+  @media (min-width: 320px) and (max-width: 480px) {
+    .nav {
+      bottom: 3rem;
+      
+      & .btn {
+        padding: 0.6rem;
+        font-size: 1rem;
+        border-width: 1.5px;
+        margin: 0 0.2rem;
+        transition: all 0.2s ease;
+        
+        &:hover {
+          background-color: rgba(255,255,255,0.4);
+          transform: scale(1.05);
+        }
+      }
+    }
+    
+    .content {
+      width: 85vw;
+      left: 1rem;
+      padding: 8px;
+      
+      & .title {
+        font-size: 0.8rem;
+      }
+      
+      & .description {
+        font-size: 0.6rem;
+        line-height: 1.4;
+        margin: 0.5rem 0 1rem;
+      }
+      
+      & button {
+        font-size: 0.6rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  /* Medium phones (481px - 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .nav {
+      bottom: 3.5rem;
+      
+      & .btn {
+        padding: 0.8rem;
+        font-size: 1.2rem;
+        border-width: 2px;
+        margin: 0 0.3rem;
+        transition: all 0.2s ease;
+        
+        &:hover {
+          background-color: rgba(255,255,255,0.4);
+          transform: scale(1.05);
+        }
+      }
+    }
+    
+    .content {
+      width: 80vw;
+      left: 1.5rem;
+      padding: 10px;
+      
+      & .title {
+        font-size: 0.9rem;
+      }
+      
+      & .description {
+        font-size: 0.7rem;
+        line-height: 1.5;
+        margin: 0.7rem 0 1.2rem;
+      }
+      
+      & button {
+        font-size: 0.7rem;
+        padding: 0.6rem;
+      }
+    }
+  }
+
+  /* Large phones and small tablets (769px - 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .nav {
+      bottom: 4rem;
+      
+      & .btn {
+        padding: 1rem;
+        font-size: 1.4rem;
+        border-width: 2.5px;
+        margin: 0 0.4rem;
+        transition: all 0.2s ease;
+        
+        &:hover {
+          background-color: rgba(255,255,255,0.4);
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
