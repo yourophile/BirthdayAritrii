@@ -79,7 +79,7 @@
     font-size: 20px;
     line-height: 2;
     color: rgb(255, 255, 255);
-    background:  rgba(0, 0, 0, 0.2);
+    background:  rgba(33, 33, 33, 0.493);
     border-radius: 5px;
     padding: 10px;
     text-shadow: 0 3px 8px rgba(0,0,0,0.5);
@@ -175,8 +175,9 @@
   
   @media (width < 650px) {
     .content {
-      & .title        { font-size: 1.1rem; }
-      & .description  { font-size: 0.85rem; }
+      background:  rgba(33, 33, 33, 0.493);
+      & .title        { font-size: 1.2rem; }
+      & .description  { font-size: 0.95rem; }
       & button        { font-size: 0.9rem; }
     }
     .item {
@@ -304,13 +305,14 @@
       width: 85vw;
       left: 1rem;
       padding: 8px;
+      background:  rgba(33, 33, 33, 0.493);
       
       & .title {
         font-size: 0.8rem;
       }
       
       & .description {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         line-height: 1.4;
         margin: 0.5rem 0 1rem;
       }
@@ -438,7 +440,7 @@
       }
       
       & .description {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         line-height: 1.6;
         margin: 0.8rem 0 1.2rem;
       }
